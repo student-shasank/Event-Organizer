@@ -64,9 +64,9 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
           </li>
         </ul> */}
       </li>
-      <li className={parentMenu === 'Pages' ? 'dropdown current-menu-item' : 'dropdown'}>
-        <Link to="#">Pages</Link>
-        <ul className="sub-menu">
+      {/* <li className={parentMenu === 'Pages' ? 'dropdown current-menu-item' : 'dropdown'}>
+        <Link to="#">Pages</Link> */}
+        {/* <ul className="sub-menu">
           <li>
             <Link to="/about" className={activeMenu === '/about' ? 'active-menu' : ''}>
               About Us
@@ -113,8 +113,8 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
             </Link>
           </li>
         </ul>
-      </li>
-      <li className={parentMenu === 'Services' ? 'dropdown current-menu-item' : 'dropdown'}>
+      </li> */}
+      {/* <li className={parentMenu === 'Services' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Services</Link>
         <ul className="sub-menu">
           <li>
@@ -148,7 +148,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
             </Link>
           </li>
         </ul>
-      </li>
+      </li> */}
       <li className={parentMenu === 'Event' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Event</Link>
         <ul className="sub-menu">
@@ -164,7 +164,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
           </li>
         </ul>
       </li>
-      <li className={parentMenu === 'Blog' ? 'dropdown current-menu-item' : 'dropdown'}>
+      {/* <li className={parentMenu === 'Blog' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Blog</Link>
         <ul className="sub-menu">
           <li>
@@ -183,7 +183,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
             </Link>
           </li>
         </ul>
-      </li>
+      </li> */}
       <li className={parentMenu === 'Contact' ? 'current-menu-item' : ''}>
         <Link to="/contact" className={activeMenu === '/contact' ? 'active-menu' : ''}>
           Contact

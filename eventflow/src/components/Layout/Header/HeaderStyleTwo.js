@@ -4,7 +4,7 @@ import MenuItems from './MenuItems';
 import MobileMenu from './MobileMenu';
 import SearchPopup from './SearchPopup';
 import Sidebar from './Sidebar';
-import navLogo from "../../../assets/images/resources/logo-1.png";
+import navLogo from "../../../assets/images/resources/COMPANY LOGO WHITE.png";
 
 const HeaderStyleTwo = (props) => {
     const { parentMenu, secondParentMenu, activeMenu } = props;
@@ -66,7 +66,7 @@ const HeaderStyleTwo = (props) => {
                             </ul>
                             </div>
                             <div className="main-menu__right">
-                            <div className="main-menu__cart-search-nav-sidebar-icon-and-btn-box">
+                            {/* <div className="main-menu__cart-search-nav-sidebar-icon-and-btn-box">
                                 <Link to="#" className="main-menu__cart icon-cart"></Link>
                                 <Link to="#" className="main-menu__search search-toggler" onClick={handlePopup}>
                                 <span className="icon-loupe"></span>
@@ -76,10 +76,10 @@ const HeaderStyleTwo = (props) => {
                                     <span className="icon-menu1"></span>
                                 </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="main-menu__btn-box">
-                                <Link to="/contact" className="main-menu__btn thm-btn">
-                                    Buy Ticket <span className="icon-arrow-right"></span>
+                                <Link to="/event" className="main-menu__btn thm-btn">
+                                    Explore Events <span className="icon-arrow-right"></span>
                                 </Link>
                             </div>
                             </div>
@@ -114,7 +114,7 @@ const HeaderStyleTwo = (props) => {
                             </ul>
                             </div>
                             <div className="main-menu__right">
-                            <div className="main-menu__cart-search-nav-sidebar-icon-and-btn-box">
+                            {/* <div className="main-menu__cart-search-nav-sidebar-icon-and-btn-box">
                                 <Link to="#" className="main-menu__cart icon-cart"></Link>
                                 <Link to="#" className="main-menu__search search-toggler" onClick={handlePopup}>
                                 <span className="icon-loupe"></span>
@@ -124,10 +124,10 @@ const HeaderStyleTwo = (props) => {
                                     <span className="icon-menu1"></span>
                                 </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="main-menu__btn-box">
-                                <Link to="/contact" className="main-menu__btn thm-btn">
-                                    Buy Ticket <span className="icon-arrow-right"></span>
+                                <Link to="/event" className="main-menu__btn thm-btn">
+                                    Explore Events <span className="icon-arrow-right"></span>
                                 </Link>
                             </div>
                             </div>

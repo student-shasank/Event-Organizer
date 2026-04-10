@@ -2,8 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component from React Router
 import CountUp from 'react-countup';
-import EventImg1 from '../../assets/images/resources/event-two-img-1.jpg';
-import EventImg2 from '../../assets/images/resources/event-two-img-2.jpg';
+import EventImg1 from '../../assets/images/resources/Event2image2.jpg';
+import EventImg2 from '../../assets/images/resources/Event2image3.JPG';
 import eventShape from '../../assets/images/shapes/event-two-shape-1.png';
 // data/eventData.js
 export const eventData = {
@@ -43,7 +43,16 @@ export default function EventTwo() {
             <div className="event-two__left">
               <div className="event-two__img-box">
                 <div className="event-two__img">
-                  <img src={eventData.image1} alt="Event-1" />
+                 <img 
+                    src={eventData.image1} 
+                    alt="Event-1" 
+                    style={{ 
+                      width: '290px', 
+                      height: '505px', 
+                      objectFit: 'cover',
+                      borderRadius: '20px' 
+                    }} 
+                  />
                 </div>
                 <div className="event-two__trusted-customer">
                   <div className="event-two__trusted-customer-icon-and-count-box">
@@ -60,7 +69,16 @@ export default function EventTwo() {
                   <p className="event-two__trusted-customer-text">Trusted Clients</p>
                 </div>
                 <div className="event-two__img-two">
-                  <img src={eventData.image2} alt="Event-2" />
+                <img 
+                    src={eventData.image2} 
+                    alt="Event-2" 
+                    style={{ 
+                      width: '310px', 
+                      height: '402px', 
+                      objectFit: 'cover',
+                      borderRadius: '20px'
+                    }} 
+                  />
                 </div>
                 <div className="event-two__shape-1 float-bob-y">
                   <img src={eventShape} alt="Shape" />

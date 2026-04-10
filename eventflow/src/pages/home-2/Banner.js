@@ -4,15 +4,15 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component from React Router
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import HeroImg1 from '../../assets/images/resources/main-slider-two-img-1-1.jpg'
+import HeroImg1 from '../../assets/images/resources/hero1.JPG'
 import HeroImg2 from '../../assets/images/shapes/main-slider-two-shape-1.png'
 import HeroImg3 from '../../assets/images/shapes/main-slider-two-shape-2.png'
 import HeroImg4 from '../../assets/images/shapes/main-slider-two-shape-3.png'
-import HeroImg5 from '../../assets/images/resources/main-slider-two-img-1-2.jpg'
+import HeroImg5 from '../../assets/images/resources/hero2.JPG'
 import HeroImg6 from '../../assets/images/shapes/main-slider-two-shape-1.png'
 import HeroImg7 from '../../assets/images/shapes/main-slider-two-shape-2.png'
 import HeroImg8 from '../../assets/images/shapes/main-slider-two-shape-3.png'
-import HeroImg9 from '../../assets/images/resources/main-slider-two-img-1-3.jpg'
+import HeroImg9 from '../../assets/images/resources/hero3.JPG'
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],

@@ -22,8 +22,8 @@ const HomeTwoMain = () => {
 		<ScheduleTwo />
 	
 		<EventTwo />
-		<CounterOne />
-		<Brand />
+		
+		
 		<ConferenceOne />
 		<GalleryTwo />
 		<Testimonial />

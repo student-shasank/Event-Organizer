@@ -1,9 +1,9 @@
 // components/ConferenceOne.js
 "use client"; // Enable client-side hooks
-import ConferencImg1 from '../../assets/images/resources/conference-one-img-1.jpg';
-import ConferencImg2 from '../../assets/images/resources/conference-one-img-2.jpg';
-import ConferencImg3 from '../../assets/images/resources/conference-one-img-3.jpg';
-import ConferencImg4 from '../../assets/images/resources/conference-one-img-4.jpg';
+import ConferencImg1 from '../../assets/images/resources/Eventprocess1.png';
+import ConferencImg2 from '../../assets/images/resources/Eventprocess2.png';
+import ConferencImg3 from '../../assets/images/resources/Eventprocess3.png';
+import ConferencImg4 from '../../assets/images/resources/Eventprocess4.png';
 import ConferencImg5 from '../../assets/images/resources/conference-one-img-5.jpg';
 
 import { useState } from 'react';
@@ -84,7 +84,18 @@ export default function ConferenceOne() {
       <div className="conference-one__tab-content-box">
         {/* Image Section */}
         <div className="conference-one__img">
-          <img src={conference.image} alt={conference.title} />
+          <img 
+    src={conference.image} 
+    alt={conference.title} 
+    style={{
+      width: '100%',         // Responsive rehne ke liye width full
+      maxHeight: '450px',    // Isse zyada height nahi lega
+      aspectRatio: '16/9',   // Standard wide look ke liye
+      objectFit: 'cover',    // Image stretch ya squeeze nahi hogi
+      display: 'block',      // Extra gap hatane ke liye
+      borderRadius: '15px'   // Agar rounded corners chahiye toh
+    }}
+  />
         </div>
 
         <div className="conference-one__tab-content-bottom">
