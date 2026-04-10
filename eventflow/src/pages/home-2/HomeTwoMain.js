@@ -12,6 +12,7 @@ import VideoOne from './VideoOne';
 import TeamTwo from './TeamTwo';
 import PricingOne from './PricingOne';
 import BlogTwo from './BlogTwo';
+import GlobalFootprintsGlobe from './GlobalFootprintsGlobe';
 
 
 const HomeTwoMain = () => {
@@ -20,6 +21,7 @@ const HomeTwoMain = () => {
 		<Banner />
 			<ServicesTwo />
 		<ScheduleTwo />
+		<GlobalFootprintsGlobe/>
 	
 		<EventTwo />
 		
