@@ -67,11 +67,12 @@ export default function GalleryTwo() {
                     <div className="gallery-two__top-inner">
                         <div className="section-title text-left">
                             <div className="section-title__tagline-box">
-                                <span className="section-title__tagline">Latest Gallery</span>
+                                <span className="section-title__tagline"> MOMENTS WE'VE CRAFTED</span>
                             </div>
                             <h2 className="section-title__title section-title__title--two">
-                                Making Your Event Celebrate <br />
-                                Dreams Come True
+                               Capturing World-Class Events
+ <br />
+                                Across the Globe
                             </h2>
                         </div>
                         <div className="gallery-two__nav">
@@ -129,7 +130,7 @@ export default function GalleryTwo() {
                                                     <p className="gallery-two__sub-title">{item.subtitle}</p>
                                                 </div>
                                                 <h4 className="gallery-two__title">
-                                                    <a href={item.link}>{item.title}</a>
+                                                    <a href="#">{item.title}</a>
                                                 </h4>
                                             </div>
                                         </div>

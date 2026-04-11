@@ -151,7 +151,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
       </li> */}
       <li className={parentMenu === 'Event' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Event</Link>
-        <ul className="sub-menu">
+        {/* <ul className="sub-menu">
           <li>
             <Link to="/event" className={activeMenu === '/event' ? 'active-menu' : ''}>
               Event
@@ -162,7 +162,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
               Event Details
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </li>
       {/* <li className={parentMenu === 'Blog' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Blog</Link>
@@ -185,7 +185,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
         </ul>
       </li> */}
       <li className={parentMenu === 'Contact' ? 'current-menu-item' : ''}>
-        <Link to="/contact" className={activeMenu === '/contact' ? 'active-menu' : ''}>
+        <Link to="/" className={activeMenu === '/contact' ? 'active-menu' : ''}>
           Contact
         </Link>
       </li>

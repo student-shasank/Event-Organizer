@@ -694,7 +694,7 @@ ul {
 .main-menu__logo {
   position: relative;
   display: block;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1;
 }
 
@@ -2966,6 +2966,7 @@ ul {
 
 .team-one__text-hover {
   margin-top: 15px;
+  color:white;
 }
 
 /*--------------------------------------------------------------
@@ -4925,7 +4926,7 @@ ul {
 .conference-one {
   position: relative;
   display: block;
-  padding: 0 0 120px;
+  padding: 100px 0 120px;
   z-index: 1;
 }
 

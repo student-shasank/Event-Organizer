@@ -50,7 +50,7 @@ const HeaderStyleTwo = (props) => {
                             <div className="main-menu__left">
                             <div className="main-menu__logo">
                                 <Link to="/">
-                                    <img src={navLogo} alt="Logo" />
+                                    <img src={navLogo} alt="Logo" style={{width:"120px",}}/>
                                 </Link>
                             </div>
                             </div>
@@ -79,7 +79,7 @@ const HeaderStyleTwo = (props) => {
                                 </div>
                             </div> */}
                             <div className="main-menu__btn-box">
-                                <Link to="/event" className="main-menu__btn thm-btn">
+                                <Link to="/" className="main-menu__btn thm-btn">
                                     Explore Events <span className="icon-arrow-right"></span>
                                 </Link>
                             </div>
@@ -98,7 +98,7 @@ const HeaderStyleTwo = (props) => {
                             <div className="main-menu__left">
                             <div className="main-menu__logo">
                                 <Link to="/">
-                                    <img src={navLogo} alt="Logo" />
+                                    <img src={navLogo} alt="Logo"  style={{width:"120px",}}/>
                                 </Link>
                             </div>
                             </div>
@@ -127,7 +127,7 @@ const HeaderStyleTwo = (props) => {
                                 </div>
                             </div> */}
                             <div className="main-menu__btn-box">
-                                <Link to="/event" className="main-menu__btn thm-btn">
+                                <Link to="/" className="main-menu__btn thm-btn">
                                     Explore Events <span className="icon-arrow-right"></span>
                                 </Link>
                             </div>

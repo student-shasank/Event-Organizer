@@ -1,51 +1,51 @@
 "use client";
 import React from "react"; // Add useState here
 import { Link } from 'react-router-dom'; // Use react-router-dom for routing.
-import TeamImg1 from '../../assets/images/team/team-1-1.jpg'
-import TeamImg2 from '../../assets/images/team/team-1-2.jpg'
-import TeamImg3 from '../../assets/images/team/team-1-3.jpg'
-import TeamImg4 from '../../assets/images/team/team-1-4.jpg'
-import TeamImg5 from '../../assets/images/team/team-1-5.jpg'
-import TeamImg6 from '../../assets/images/team/team-1-6.jpg'
+import TeamImg1 from '../../assets/images/team/whychooseus1.png'
+import TeamImg2 from '../../assets/images/team/whychooseus2.png'
+import TeamImg3 from '../../assets/images/team/whychooseus3.png'
+import TeamImg4 from '../../assets/images/team/whychooseus7.png'
+import TeamImg5 from '../../assets/images/team/whychooseus5.png'
+import TeamImg6 from '../../assets/images/team/whychooseus6.png'
 
 const teamMembers = [
   {
-    name: "David Beckham",
+    name: "Corporate-Focused Expertise",
     role: "Speaker",
     img: TeamImg1,
     description:
       "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
   },
   {
-    name: "David Betman",
+    name: "Brand-Aligned Event Design",
     role: "Singer",
     img: TeamImg2,
     description:
       "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
   },
   {
-    name: "Jessica Brown",
+    name: "Experienced Project Management",
     role: "Content Creator",
     img: TeamImg3,
     description:
       "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
   },
   {
-    name: "David Beckham",
+    name: "Transparent Budgeting",
     role: "Speaker",
     img: TeamImg4,
     description:
       "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
   },
   {
-    name: "Alisha Martin",
+    name: "Dedicated Client Support",
     role: "Singer",
     img: TeamImg5,
     description:
       "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
   },
   {
-    name: "Herbert Spin",
+    name: "Global Footprint",
     role: "Content Creator",
     img: TeamImg6,
     description:
@@ -57,6 +57,16 @@ export default function Home() {
 
           <section className="team-page">
             <div className="container">
+               <div className="section-title text-center">
+          <div className="section-title__tagline-box">
+            <span className="section-title__tagline">Why Choose Us</span>
+          </div>
+          <h2 className="section-title__title section-title__title--two">
+          Building Relationships
+
+<br />  Driving Results
+          </h2>
+        </div>
               <div className="row">
                 {teamMembers.map((member, index) => (
                   <div
@@ -74,15 +84,13 @@ export default function Home() {
                             <h4 className="team-one__name">
                               <Link to="team-details">{member.name}</Link>
                             </h4>
-                            <p className="team-one__sub-title">{member.role}</p>
+                         
                           </div>
                           <div className="team-one__content-hover">
                             <h4 className="team-one__name-hover">
                               <Link to="team-details">{member.name}</Link>
                             </h4>
-                            <p className="team-one__sub-title-hover">
-                              {member.role}
-                            </p>
+                            
                             <p className="team-one__text-hover">
                               {member.description}
                             </p>

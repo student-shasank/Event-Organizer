@@ -5,6 +5,8 @@ import CountUp from 'react-countup';
 import EventImg1 from '../../assets/images/resources/Event2image2.jpg';
 import EventImg2 from '../../assets/images/resources/Event2image3.JPG';
 import eventShape from '../../assets/images/shapes/event-two-shape-1.png';
+import Experience from '../../assets/images/resources/quality.png';
+import Countries from '../../assets/images/resources/country.png';
 // data/eventData.js
 export const eventData = {
     image1: EventImg1,
@@ -16,13 +18,13 @@ export const eventData = {
     points: [
       {
         id: 1,
-        icon: 'icon-camera-two',
+        icon: Countries,
         count: 12,
         label: 'Countries'
       },
       {
         id: 2,
-        icon: 'icon-clown',
+        icon: Experience,
         count: 17,
         label: 'Years Experience'
       }
@@ -105,7 +107,9 @@ export default function EventTwo() {
                 {eventData.points.map(point => (
                   <li key={point.id}>
                     <div className="event-two__points-icon">
-                      <span className={point.icon}></span>
+                      <img 
+                    src={point.icon} 
+                  />
                     </div>
                     <div className="event-two__points-text-box">
                       <div className="event-two__points-count">
@@ -123,7 +127,7 @@ export default function EventTwo() {
              Globetrotting Nomads, founded in 2008, has grown into Nomadic Event Pvt Ltd, registered in Goa in 2025 with a UAE office launched in July 2025. We specialize in creating unique global travel and event experiences, offering end-to-end services including planning, travel, visas, logistics, resort stays, venue bookings, and full event execution
               </p>
               <div className="event-two__btn-box">
-                <Link to="/about" className="event-two__btn thm-btn">
+                <Link to="/" className="event-two__btn thm-btn">
                     More About Us <span className="icon-arrow-right"></span>
                 </Link>
               </div>

@@ -66,7 +66,7 @@ const styles = {
   infoSubtitle: {
     margin: 0,
     fontSize: 13,
-    color: '#8a9ec9',
+    color: '#e4e9f3',
     lineHeight: 1.6,
   },
   locationsList: {
@@ -385,9 +385,10 @@ export default function Globe3D() {
 
       {/* Info box */}
       <div style={styles.infoBox}>
-        <h1 style={styles.infoTitle}>Our Global Offices</h1>
+        <h1 style={styles.infoTitle}>Our Global Footprints
+</h1>
         <p style={styles.infoSubtitle}>
-          Click a location on the right to focus, or drag the globe to explore.
+      From Goa to Dubai — curating world-class events across 12 iconic destinations since 2008.
         </p>
       </div>
 

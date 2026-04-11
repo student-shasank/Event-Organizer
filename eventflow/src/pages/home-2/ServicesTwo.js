@@ -4,7 +4,7 @@ export const servicesData = [
   {
     id: 1,
     title: <>Brand & Marketing <br /> Events</>,
-    link: "/elite-event-management",
+    link: "/",
     icon: "icon-theater",
     delay: "100ms",
     points: [
@@ -16,7 +16,7 @@ export const servicesData = [
   {
     id: 2,
     title: <>Employee Engagement <br /> Events</>,
-    link: "/dream-event-planners",
+    link: "/",
     icon: "icon-magic-show",
     delay: "200ms",
     points: [
@@ -28,7 +28,7 @@ export const servicesData = [
   {
     id: 3,
     title: <>Corporate Events & <br /> Summits</>,
-    link: "/event-prodigy",
+    link: "/",
     icon: "icon-location",
     delay: "300ms",
     points: [
@@ -74,9 +74,6 @@ export default function ServicesTwo() {
     <li key={index}>→ {point}</li>
   ))}
 </ul>
-                <Link to={service.link} className="services-two__btn">
-                    Read More <span className="icon-arrow-right"></span>
-                </Link>
               </div>
             </div>
           ))}

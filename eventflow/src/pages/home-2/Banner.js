@@ -55,8 +55,8 @@ export default function Banner() {
                             EXPERIENCES
                         </h2>
                         <div className="main-slider-two__btn-box">
-                            <Link to="/contact" className="main-slider-two__btn thm-btn">
-                              Explore Our Events  <span className="icon-arrow-right"></span>
+                            <Link to="/" className="main-slider-two__btn thm-btn">
+                              Explore Events  <span className="icon-arrow-right"></span>
                             </Link>
                         </div>
                         </div>
@@ -93,8 +93,8 @@ export default function Banner() {
                           DESTINATION EVENTS
                         </h2>
                         <div className="main-slider-two__btn-box">
-                            <Link to="/contact" className="main-slider-two__btn thm-btn">
-                                Purchase Ticket <span className="icon-arrow-right"></span>
+                            <Link to="/" className="main-slider-two__btn thm-btn">
+                                Explore Events <span className="icon-arrow-right"></span>
                             </Link>
                         </div>
                         </div>
@@ -131,8 +131,8 @@ export default function Banner() {
       Experiences
     </h2>
     <div className="main-slider-two__btn-box">
-      <Link to="/contact" className="main-slider-two__btn thm-btn">
-        Plan Your Event <span className="icon-arrow-right"></span>
+      <Link to="/" className="main-slider-two__btn thm-btn">
+        Explore Events <span className="icon-arrow-right"></span>
       </Link>
     </div>
   </div>

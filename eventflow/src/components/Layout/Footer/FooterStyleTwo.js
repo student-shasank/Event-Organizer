@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component from React Router
 
 // Import images
-import footerLogo from '../../../assets/images/resources/site-footer-logo-2.png'; // Replace with your actual path
+import footerLogo from '../../../assets/images/resources/logo-1.png'; // Replace with your actual path
 
 const FooterTwo = () => {
     const events = [
         {
           date: "11 April 2024 At 10 Pm In Dhaka",
           title: "Ui/ux Designer Meetup",
-          link: "/contact",
+          link: "/",
         },
         {
           date: "12 April 2024 At 11 Pm In Dhaka",
           title: "Web Development Workshop",
-          link: "/contact",
+          link: "/",
         },
       ];
     
@@ -31,7 +31,7 @@ const FooterTwo = () => {
           <div className="container">
             <div className="site-footer-two__top-inner">
               <Link to="#" className="site-footer-two__top-content">
-                Get Your <span>Ticket Now</span>{" "}
+                Explore <span>Events</span>{" "}
                 <i className="icon-arrow-up"></i>
               </Link>
             </div>
@@ -51,6 +51,7 @@ const FooterTwo = () => {
                         <img
                           src={footerLogo}
                           alt=""
+                          style={{width:"120px",}}
                         />
                       </Link>
                     </div>
@@ -160,17 +161,17 @@ const FooterTwo = () => {
           <div className="container">
             <div className="site-footer-two__bottom-inner">
               <p className="site-footer-two__bottom-text">
-                © EventFlow 2024 | All Rights Reserved
+                © MetaByte | All Rights Reserved
               </p>
               <ul className="list-unstyled site-footer-two__bottom-menu">
                 <li>
-                  <Link to="/about">Terms & Conditions</Link>
+                  <Link to="/">Terms & Conditions</Link>
                 </li>
                 <li>
-                  <Link to="/about">Privacy Policy</Link>
+                  <Link to="/">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/about">Contact Us</Link>
+                  <Link to="/">Contact Us</Link>
                 </li>
               </ul>
             </div>

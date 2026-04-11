@@ -37,9 +37,9 @@ export default function App() {
       <Routes>
         <Route index element={<HomeTwo />} />
         <Route path="home-2" element={<HomeTwo />} />
-        <Route path="home-3" element={<HomeThree />} />
-        <Route path="about" element={<About />} />
-        <Route path="one-page-style-one" element={<OnePageHome />} />
+        {/* <Route path="home-3" element={<HomeThree />} /> */}
+        {/* <Route path="about" element={<About />} /> */}
+        {/* <Route path="one-page-style-one" element={<OnePageHome />} />
         <Route path="one-page-style-two" element={<OnePageHomeTwo />} />
         <Route path="one-page-style-three" element={<OnepageHomeThree />} />
         <Route path="team" element={<Team />} />
@@ -61,7 +61,7 @@ export default function App() {
          <Route path="blog" element={<Blog />} />
          <Route path="blog-list" element={<Bloglist />} />
          <Route path="blog-details" element={<BlogDetails />} />
-         <Route path="contact" element={<Contact />} />
+         <Route path="contact" element={<Contact />} /> */}
       </Routes>
     </BrowserRouter>
   );
