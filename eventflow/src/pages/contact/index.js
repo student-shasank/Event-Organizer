@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import BackToTop from '../../components/elements/BackToTop';
-import Header from '../../components/Layout/Header';
-import navImg1 from '../../assets/images/resources/logo-1.png';
-import Footer from '../../components/Layout/Footer';
+// import Header from '../../components/Layout/Header';
+// import navImg1 from '../../assets/images/resources/logo-1.png';
+// import Footer from '../../components/Layout/Footer';
 import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import bannerbg from '../../assets/images/backgrounds/page-header-bg.jpg';
+// import bannerbg from '../../assets/images/backgrounds/page-header-bg.jpg';
+import bannerbg from "../../../src/assets/images/resources/contact2.jpg"
 import CtaTwo from '../../components/Common/CtaSection/CtaTwo';
 import ContactMain from './ContactMain';
+import HeaderStyleTwo from '../../components/Layout/Header/HeaderStyleTwo';
+import FooterTwo from '../../components/Layout/Footer/FooterStyleTwo';
 
 // Breadcrumbs Background Image
 
@@ -29,11 +32,12 @@ const Contact = () => {
     }, []);
     return (
         <React.Fragment>
-        <Header
+        {/* <Header
             navImg={navImg1}
             parentMenu='contact'
             activeMenu="/contact"
-        />
+        /> */}
+       <HeaderStyleTwo/>
         {/* SiteBreadcrumb */}
         <SiteBreadcrumb
             pageTitle="Contact"
@@ -46,7 +50,7 @@ const Contact = () => {
         <CtaTwo/>
         {/*cta-section end */}
         <BackToTop scroll={isVisible} />
-        <Footer />
+       <FooterTwo/>
     </React.Fragment>
     );
 }

@@ -26,8 +26,8 @@ const SiteBreadcrumb = (props) => {
                             <li><span className="icon-angle-left"></span></li>
                             {pageCategory ? (
                                 <>
-                                    <li>
-                                        <Link to="/" className="active">{pageCategory}</Link>
+                                      <li>
+                                      <Link to="/" className="active">{pageCategory}</Link>
                                     </li>
                                     
                                     <li>{pageName ? pageName : 'Page Name'}</li>

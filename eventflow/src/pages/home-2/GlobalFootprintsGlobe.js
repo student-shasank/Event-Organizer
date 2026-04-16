@@ -46,7 +46,7 @@ const styles = {
     position: 'absolute',
     top: 24,
     left: 24,
-    padding: '18px 22px',
+    padding: '18px 22px  ' ,
     background: 'rgba(5, 8, 20, 0.72)',
     borderRadius: 14,
     border: '1px solid rgba(120,180,255,0.13)',
@@ -190,6 +190,8 @@ export default function Globe3D() {
     controls.dampingFactor = 0.05;
     controls.minDistance = 15;
     controls.maxDistance = 100;
+    controls.enableZoom = false;   // ❌ zoom in/out disable
+    controls.enablePan = false;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.3;
     controls.enablePan = false;
@@ -384,10 +386,10 @@ export default function Globe3D() {
       <div ref={mountRef} style={styles.canvasWrapper} />
 
       {/* Info box */}
-      <div style={styles.infoBox}>
-        <h1 style={styles.infoTitle}>Our Global Footprints
+      <div style={styles.infoBox} >
+        <h1 className='section-title__tagline'>Our Global Footprints
 </h1>
-        <p style={styles.infoSubtitle}>
+        <p  className='event-two__text'>
       From Goa to Dubai — curating world-class events across 12 iconic destinations since 2008.
         </p>
       </div>
@@ -401,7 +403,7 @@ export default function Globe3D() {
             onMouseEnter={() => setHoveredIdx(idx)}
             onMouseLeave={() => setHoveredIdx(null)}
             onClick={() => sceneRef.current.flyToLocation?.(idx)}
-          >
+         className='testimonial-one__quote' >
             {loc.name}
           </div>
         ))}

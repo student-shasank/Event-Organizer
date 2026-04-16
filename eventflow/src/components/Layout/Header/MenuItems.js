@@ -185,7 +185,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
         </ul>
       </li> */}
       <li className={parentMenu === 'Contact' ? 'current-menu-item' : ''}>
-        <Link to="/" className={activeMenu === '/contact' ? 'active-menu' : ''}>
+        <Link to="/contact" className={activeMenu === '/contact' ? 'active-menu' : ''}>
           Contact
         </Link>
       </li>

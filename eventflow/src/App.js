@@ -26,7 +26,7 @@ import HomeTwo from "./pages/home-2";
 // import Blog from "./pages/blog";
 // import Bloglist from "./pages/blog-list";
 // import BlogDetails from "./pages/blog-details";
-// import Contact from "./pages/contact";
+ import Contact from "./pages/contact";
 
 
 
@@ -61,7 +61,8 @@ export default function App() {
          <Route path="blog" element={<Blog />} />
          <Route path="blog-list" element={<Bloglist />} />
          <Route path="blog-details" element={<BlogDetails />} />
-         <Route path="contact" element={<Contact />} /> */}
+         */}
+         <Route path="contact" element={<Contact />} /> 
       </Routes>
     </BrowserRouter>
   );

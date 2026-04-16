@@ -1562,6 +1562,9 @@ ul {
   position: relative;
   background-color: var(--eventflow-black);
 }
+.swiper{
+  overflow: hidden;
+}
 
 .main-slider__img {
   position: absolute;
@@ -7002,9 +7005,11 @@ ul {
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+ 
+  background-position: center 33%;
   z-index: -1;
 }
+
 
 .page-header__bg::before {
   content: "";
@@ -7060,6 +7065,8 @@ ul {
 .thm-breadcrumb li span {
   font-size: 13px;
 }
+
+
 
 .thm-breadcrumb li a {
   position: relative;
