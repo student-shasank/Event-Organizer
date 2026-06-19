@@ -2,15 +2,15 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
-import SchedulImg1 from '../../assets/images/resources/event1.JPG';
-import SchedulImg2 from '../../assets/images/resources/event2.JPG';
-import SchedulImg3 from '../../assets/images/resources/event3.JPG';
-import SchedulImg4 from '../../assets/images/resources/event4.JPG';
-import SchedulImg5 from '../../assets/images/resources/event5.JPG';
-import SchedulImg6 from '../../assets/images/resources/event6.JPG';
-import SchedulImg7 from '../../assets/images/resources/event7.JPG';
-import SchedulImg8 from '../../assets/images/resources/event8.JPG';
-import SchedulImg9 from '../../assets/images/resources/event9.JPG';
+import SchedulImg1 from '../../assets/images/resources/Business Conferences & seminars image.jpg';
+import SchedulImg2 from '../../assets/images/resources/Annual General Meetings image.jpg';
+import SchedulImg3 from '../../assets/images/resources/Corporate Meetings & Executive Summits image.jpg';
+import SchedulImg4 from '../../assets/images/resources/Team Building Programs image.jpg';
+import SchedulImg5 from '../../assets/images/resources/Leadership & Development Workshops image.jpg';
+import SchedulImg6 from '../../assets/images/resources/Brand & Marketing Training Events image.jpg';
+import SchedulImg7 from '../../assets/images/resources/Corporate Gala Nights & Parties image.jpg';
+import SchedulImg8 from '../../assets/images/resources/Award.jpg';
+import SchedulImg9 from '../../assets/images/resources/Product Launches & Brand Activations image.jpg';
 
 const tabsData = [
     {
@@ -22,21 +22,21 @@ const tabsData = [
                 title: 'Business Conferences & Seminars',
                 description: 'From intimate boardroom discussions to large-scale industry conferences, we deliver seamless, high-impact events that drive meaningful conversations.',
                 location: 'Goa, India',
-                time: '10 AM To 6 PM — 2025',
+                attendees: '600+ Attendees',
             },
             {
                 image: SchedulImg2,
                 title: 'Annual General Meetings (AGM)',
                 description: 'Professional AGM management with precise logistics, AV support, and executive coordination — ensuring every stakeholder engagement is flawless.',
                 location: 'Dubai, UAE',
-                time: '9 AM To 5 PM — 2025',
+             attendees: '800+ Attendees',
             },
             {
                 image: SchedulImg3,
                 title: 'Corporate Meetings & Executive Summits',
                 description: 'Curated executive summits that combine world-class venues, premium hospitality, and strategic agenda design for impactful leadership gatherings.',
                 location: 'Budapest, Hungary',
-                time: '10 AM To 8 PM — 2025',
+                attendees: '2000+ Attendees',
             },
         ],
     },
@@ -49,21 +49,21 @@ const tabsData = [
                 title: 'Team-Building Programs',
                 description: 'Dynamic team-building workshops designed to strengthen collaboration, boost morale, and create lasting bonds among your workforce.',
                 location: 'Bali, Indonesia',
-                time: '9 AM To 5 PM — 2025',
+               attendees: '600+ Attendees',
             },
             {
                 image: SchedulImg5,
                 title: 'Leadership & Development Workshops',
                 description: 'Empowering training sessions that sharpen leadership skills, drive professional growth, and align teams with your company vision.',
                 location: 'Thailand',
-                time: '10 AM To 4 PM — 2025',
+             attendees: '500+ Attendees',
             },
             {
                 image: SchedulImg6,
                 title: 'Brand & Marketing Training Events',
                 description: 'Engaging roadshows and brand activation workshops that energize your marketing teams and align brand messaging across regions.',
                 location: 'Malaysia',
-                time: '10 AM To 6 PM — 2025',
+               attendees: '500+ Attendees',
             },
         ],
     },
@@ -76,27 +76,27 @@ const tabsData = [
                 title: 'Corporate Gala Nights & Parties',
                 description: 'Spectacular gala evenings with premium décor, entertainment, and dining — creating unforgettable nights that celebrate your team\'s achievements.',
                 location: 'Dubai, UAE',
-                time: '7 PM To 12 AM — 2025',
+               attendees: '600+ Attendees',
             },
             {
                 image: SchedulImg8,
                 title: 'Award & Recognition Ceremonies',
                 description: 'Prestigious award ceremonies crafted to honour excellence, inspire performance, and celebrate milestones with elegance and style.',
                 location: 'Amsterdam, Netherlands',
-                time: '6 PM To 11 PM — 2025',
+                attendees: '500+ Attendees',
             },
             {
                 image: SchedulImg9,
                 title: 'Product Launches & Brand Activations',
                 description: 'High-energy product launch events that create buzz, engage your audience, and put your brand in the spotlight on a global stage.',
                 location: 'Baku, Azerbaijan',
-                time: '10 AM To 8 PM — 2025',
+               attendees: '500+ Attendees',
             },
         ],
     },
 ];
 
-const EventCard = ({ image, title, description, location, time }) => (
+const EventCard = ({ image, title, description, location, attendees }) => (
     <div className="schedule-two__sinlge">
         <div className="row">
             <div className="col-xl-4 col-lg-4">
@@ -117,10 +117,10 @@ const EventCard = ({ image, title, description, location, time }) => (
                             <div className="icon"><span className="icon-pin"></span></div>
                             <div className="text"><p>{location}</p></div>
                         </li>
-                        <li>
-                            <div className="icon"><span className="icon-clock"></span></div>
-                            <div className="text"><p>{time}</p></div>
-                        </li>
+                       <li>
+    <div className="icon"><span className="icon-user"></span></div>
+    <div className="text"><p>{attendees}</p></div>
+</li>
                     </ul>
                 </div>
             </div>

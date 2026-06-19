@@ -14,42 +14,42 @@ const teamMembers = [
     role: "Speaker",
     img: TeamImg1,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "Specialized in delivering professional corporate events that align with business goals, company culture, and audience expectations.",
   },
   {
     name: "Brand-Aligned Event Design",
     role: "Singer",
     img: TeamImg2,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "Every event is thoughtfully designed to reflect your brand identity, messaging, and values for a consistent experience.",
   },
   {
-    name: "Experienced Project Management",
+    name: "Experienced Project Management Team",
     role: "Content Creator",
     img: TeamImg3,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "Our skilled project managers oversee every detail, ensuring seamless planning, coordination, and successful event delivery.",
   },
   {
-    name: "Transparent Budgeting",
+    name: "Timely & Hassle-Free Execution",
     role: "Speaker",
     img: TeamImg4,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "From setup to completion, we handle logistics efficiently so your event runs smoothly and on schedule.",
   },
   {
-    name: "Dedicated Client Support",
+    name: "Transparent Budgeting",
     role: "Singer",
     img: TeamImg5,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "Clear pricing, detailed cost breakdowns, and budget-conscious planning help you stay informed throughout the process.",
   },
   {
-    name: "Global Footprint",
+    name: "Dedicated Client Support",
     role: "Content Creator",
     img: TeamImg6,
     description:
-      "Events bring people together for shared experience and celebration. Weddings and birthdays to conferences, festivals, events create memories.",
+      "Receive personalized assistance and responsive communication from a dedicated team committed to your event’s success.",
   },
 ];
 export default function Home() {
@@ -82,13 +82,13 @@ export default function Home() {
                           <img src={member.img} alt={member.name} />
                           <div className="team-one__content">
                             <h4 className="team-one__name">
-                              <Link to="team-details">{member.name}</Link>
+                              <Link to="/">{member.name}</Link>
                             </h4>
                          
                           </div>
                           <div className="team-one__content-hover">
                             <h4 className="team-one__name-hover">
-                              <Link to="team-details">{member.name}</Link>
+                              <Link to="/">{member.name}</Link>
                             </h4>
                             
                             <p className="team-one__text-hover">

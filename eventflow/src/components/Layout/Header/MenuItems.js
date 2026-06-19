@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
   return (
     <ul className="main-menu__list">
-      <li className={parentMenu === 'Home' ? 'dropdown current-menu-item' : 'dropdown'}>
-        <Link to="/home-2">Home</Link>
+      <li className={parentMenu === 'Home' ? 'dropdown current-menu-item' : 'dropdown'} >
+        <Link to="/home" style={{color: '#fff'}}>Home</Link>
         {/* <ul className="sub-menu">
           <li>
             <Link to="/" className={activeMenu === '/' ? 'active-menu' : ''}>
@@ -149,8 +149,8 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
           </li>
         </ul>
       </li> */}
-      <li className={parentMenu === 'Event' ? 'dropdown current-menu-item' : 'dropdown'}>
-        <Link to="#">Event</Link>
+      {/* <li className={parentMenu === 'Event' ? 'dropdown current-menu-item' : 'dropdown'}>
+        <Link to="#" style={{color: '#fff'}}>Event</Link> */}
         {/* <ul className="sub-menu">
           <li>
             <Link to="/event" className={activeMenu === '/event' ? 'active-menu' : ''}>
@@ -163,7 +163,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
             </Link>
           </li>
         </ul> */}
-      </li>
+      {/* </li> */}
       {/* <li className={parentMenu === 'Blog' ? 'dropdown current-menu-item' : 'dropdown'}>
         <Link to="#">Blog</Link>
         <ul className="sub-menu">
@@ -185,7 +185,7 @@ const MenuItems = ({ parentMenu, secondParentMenu, activeMenu }) => {
         </ul>
       </li> */}
       <li className={parentMenu === 'Contact' ? 'current-menu-item' : ''}>
-        <Link to="/contact" className={activeMenu === '/contact' ? 'active-menu' : ''}>
+        <Link to="/contact" className={activeMenu === '/contact' ? 'active-menu' : ''} style={{color: '#fff'}}>
           Contact
         </Link>
       </li>

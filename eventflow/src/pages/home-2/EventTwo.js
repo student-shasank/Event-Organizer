@@ -126,11 +126,11 @@ export default function EventTwo() {
               <p className="event-two__text">
              Globetrotting Nomads, founded in 2008, has grown into Nomadic Event Pvt Ltd, registered in Goa in 2025 with a UAE office launched in July 2025. We specialize in creating unique global travel and event experiences, offering end-to-end services including planning, travel, visas, logistics, resort stays, venue bookings, and full event execution
               </p>
-              <div className="event-two__btn-box">
+              {/* <div className="event-two__btn-box">
                 <Link to="/" className="event-two__btn thm-btn">
                     More About Us <span className="icon-arrow-right"></span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

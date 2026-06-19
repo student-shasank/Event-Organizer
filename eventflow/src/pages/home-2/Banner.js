@@ -8,12 +8,13 @@ import HeroImg1 from '../../assets/images/resources/hero1.JPG'
 import HeroImg2 from '../../assets/images/shapes/main-slider-two-shape-1.png'
 import HeroImg3 from '../../assets/images/shapes/main-slider-two-shape-2.png'
 import HeroImg4 from '../../assets/images/shapes/main-slider-two-shape-3.png'
-import HeroImg5 from '../../assets/images/resources/hero2.JPG'
+import HeroImg5 from '../../assets/images/backgrounds/slider-1-2.JPG'
 import HeroImg6 from '../../assets/images/shapes/main-slider-two-shape-1.png'
 import HeroImg7 from '../../assets/images/shapes/main-slider-two-shape-2.png'
 import HeroImg8 from '../../assets/images/shapes/main-slider-two-shape-3.png'
-import HeroImg9 from '../../assets/images/resources/hero3.JPG'
-
+import HeroImg9 from '../../assets/images/backgrounds/slider-1-3.JPG'
+import background from '../../assets/videobg/om-bg-3.png'
+// import backgropundimage from 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -38,7 +39,17 @@ export default function Banner() {
        
         <>
         {/* banner-one */}
-        <section id="th-home" className="main-slider-two">
+<section 
+  id="th-home" 
+  className="main-slider-two"
+  style={{
+    backgroundImage:  `url(${background})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  
+  }}
+>
             <Swiper {...swiperOptions} className="swiper-container thm-swiper__slider">
             <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
@@ -55,7 +66,7 @@ export default function Banner() {
                             EXPERIENCES
                         </h2>
                         <div className="main-slider-two__btn-box">
-                            <Link to="/" className="main-slider-two__btn thm-btn">
+                            <Link to="/#events" className="main-slider-two__btn thm-btn" >
                               Explore Events  <span className="icon-arrow-right"></span>
                             </Link>
                         </div>
@@ -93,7 +104,7 @@ export default function Banner() {
                           DESTINATION EVENTS
                         </h2>
                         <div className="main-slider-two__btn-box">
-                            <Link to="/" className="main-slider-two__btn thm-btn">
+                            <Link to="/#events" className="main-slider-two__btn thm-btn" >
                                 Explore Events <span className="icon-arrow-right"></span>
                             </Link>
                         </div>
@@ -131,7 +142,7 @@ export default function Banner() {
       Experiences
     </h2>
     <div className="main-slider-two__btn-box">
-      <Link to="/" className="main-slider-two__btn thm-btn">
+      <Link to="/#events" className="main-slider-two__btn thm-btn" >
         Explore Events <span className="icon-arrow-right"></span>
       </Link>
     </div>

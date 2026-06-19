@@ -1,41 +1,50 @@
-import React from 'react';
-import Banner from './Banner';
-import ScheduleTwo from './ScheduleTwo';
-import ServicesTwo from './ServicesTwo';
-import EventTwo from './EventTwo';
-import CounterOne from './CounterOne';
-import Brand from './Brand';
-import ConferenceOne from './ConferenceOne';
-import GalleryTwo from './GalleryTwo';
-import Testimonial from './Testimonial';
-import VideoOne from './VideoOne';
-import TeamTwo from './TeamTwo';
-import PricingOne from './PricingOne';
-import BlogTwo from './BlogTwo';
-import TeamMain from '../team/TeamMain'
-import GlobalFootprintsGlobe from './GlobalFootprintsGlobe';
+import React from "react";
+import { useLocation } from "react-router-dom";
 
+import Banner from "./Banner";
+import ScheduleTwo from "./ScheduleTwo";
+import ServicesTwo from "./ServicesTwo";
+import EventTwo from "./EventTwo";
+import ConferenceOne from "./ConferenceOne";
+import GalleryTwo from "./GalleryTwo";
+import Testimonial from "./Testimonial";
+import VideoOne from "./VideoOne";
+import TeamMain from "../team/TeamMain";
+import GlobalFootprintsGlobe from "./GlobalFootprintsGlobe";
 
 const HomeTwoMain = () => {
-	return (
-		<>
-		<Banner />
-			<ServicesTwo />
-		<ScheduleTwo />
-		<GlobalFootprintsGlobe/>
-	
-		<EventTwo />
-		
-		
-		<ConferenceOne />
-		<GalleryTwo />
-		<Testimonial />
-		<VideoOne />
-		<TeamMain/>
-		
-	
-		</>
-	);
-}
+  const location = useLocation();
+
+  React.useEffect(() => {
+    if (location.hash === "#events") {
+      setTimeout(() => {
+        document.getElementById("events")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 200);
+    }
+  }, [location]);
+
+  return (
+    <>
+      <Banner />
+      <ServicesTwo />
+
+      {/* Events Section */}
+      <div id="events">
+        <ScheduleTwo />
+      </div>
+
+      <GlobalFootprintsGlobe />
+      <EventTwo />
+      <ConferenceOne />
+      <GalleryTwo />
+      <Testimonial />
+      <VideoOne />
+      <TeamMain />
+    </>
+  );
+};
 
 export default HomeTwoMain;

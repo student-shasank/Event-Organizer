@@ -24,7 +24,7 @@ const HomeTwo = () => {
 	return (
 		<div className="body-bg-color-2">
 		<React.Fragment>
-            <HeaderStyleTwo />
+            <HeaderStyleTwo /> 
             <HomeTwoMain/>
             <BackToTop scroll={isVisible} />
             <FooterTwo />

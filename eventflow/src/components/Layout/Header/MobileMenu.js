@@ -44,17 +44,17 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           </span>
           <div className="logo-box">
             <Link to="/" aria-label="logo image">
-            <img src={MobileLogo} alt="Logo" />
+            <img src={MobileLogo} alt="Logo"  style={{ width: "225px" }}/>
             </Link>
           </div>
           {/* /.logo-box */}
           <div className="mobile-nav__container">
           <ul className="main-menu__list">
-  <li className={isActive.key === 1 ? "dropdown current" : "dropdown"}>
-    <Link to="/" onClick={handleMobileMenu}>
+  <li >
+    <Link to="/home" onClick={handleMobileMenu}>
       Home{" "}
     </Link>
-    <ul style={{ display: `${isActive.key === 1 ? "block" : "none"}` }}>
+    {/* <ul style={{ display: `${isActive.key === 1 ? "block" : "none"}` }}>
       <li>
         <Link to="/" onClick={handleMobileMenu}>
           Home One
@@ -70,7 +70,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           Home Three
         </Link>
       </li>
-      <li className={isActive.subMenuKey === 2 ? "dropdown current" : "dropdown"}>
+       <li className={isActive.subMenuKey === 2 ? "dropdown current" : "dropdown"}>
         <Link to="#" onClick={handleMobileMenu}>
           Header Styles
         </Link>
@@ -97,8 +97,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
         >
           <span className="fa fa-angle-right" />
         </div>
-      </li>
-      <li className={isActive.subMenuKey === 3 ? "dropdown current" : "dropdown"}>
+      </li> 
+       <li className={isActive.subMenuKey === 3 ? "dropdown current" : "dropdown"}>
         <Link to="#" onClick={handleMobileMenu}>
           One Page Styles
         </Link>
@@ -125,17 +125,17 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
         >
           <span className="fa fa-angle-right" />
         </div>
-      </li>
-    </ul>
-    <div
+      </li> 
+    </ul> */}
+    {/* <div
       className={isActive.key === 1 ? "dropdown-btn open" : "dropdown-btn"}
       onClick={() => handleToggle(1)}
     >
       <span className="fa fa-angle-right" />
-    </div>
+    </div> */}
   </li>
 
-  <li className={isActive.key === 2 ? "dropdown current" : "dropdown"}>
+  {/* <li className={isActive.key === 2 ? "dropdown current" : "dropdown"}>
     <Link to="#" onClick={handleMobileMenu}>
       Pages
     </Link>
@@ -192,9 +192,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
     >
       <span className="fa fa-angle-right" />
     </div>
-  </li>
+  </li> */}
 
-  <li className={isActive.key === 3 ? "dropdown current" : "dropdown"}>
+  {/* <li className={isActive.key === 3 ? "dropdown current" : "dropdown"}>
     <Link to="#" onClick={handleMobileMenu}>
       Services
     </Link>
@@ -236,9 +236,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
     >
       <span className="fa fa-angle-right" />
     </div>
-  </li>
+  </li> */}
 
-  <li className={isActive.key === 4 ? "dropdown current" : "dropdown"}>
+  {/* <li className={isActive.key === 4 ? "dropdown current" : "dropdown"}>
     <Link to="#" onClick={handleMobileMenu}>
       Event
     </Link>
@@ -260,9 +260,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
     >
       <span className="fa fa-angle-right" />
     </div>
-  </li>
+  </li> */}
 
-  <li className={isActive.key === 5 ? "dropdown current" : "dropdown"}>
+  {/* <li className={isActive.key === 5 ? "dropdown current" : "dropdown"}>
     <Link to="#" onClick={handleMobileMenu}>
       Blog
     </Link>
@@ -289,7 +289,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
     >
       <span className="fa fa-angle-right" />
     </div>
-  </li>
+  </li> */}
 
   <li>
     <Link to="/contact" onClick={handleMobileMenu}>
@@ -301,13 +301,13 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope" />
-              <a href="mailto:needhelp@packageName__.com">
-                needhelp@eventflow.com
-              </a>
+              <a href="mailto:sheldon@gtnomads.com">
+                sheldon@gtnomads.com,
+                </a>
             </li>
             <li>
               <i className="fa fa-phone-alt" />
-              <a href="tel:666-888-0000">666 888 0000</a>
+              <a href="tel:91 9822959761">91 9822959761</a>
             </li>
           </ul>
           {/* /.mobile-nav__contact */}

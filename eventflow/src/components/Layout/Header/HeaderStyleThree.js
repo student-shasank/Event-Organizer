@@ -48,7 +48,7 @@ const HeaderStyleThree = (props) => {
                             <div className="main-menu__left">
                             <div className="main-menu__logo">
                                 <Link to="/">
-                                    <img src={navLogo} alt="Logo" />
+                                    <img src={navLogo} alt="Logo"  style={{width:"180px",}}/>
                                 </Link>
                             </div>
                             </div>
@@ -83,7 +83,7 @@ const HeaderStyleThree = (props) => {
                                 <div className="main-menu__left">
                                 <div className="main-menu__logo">
                                     <Link to="/">
-                                        <img src={navLogo} alt="Logo" />
+                                        <img src={navLogo} alt="Logo" style={{width:"180px",}}/>
                                     </Link>
                                 </div>
                                 </div>

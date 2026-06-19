@@ -36,7 +36,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<HomeTwo />} />
-        <Route path="home-2" element={<HomeTwo />} />
+        <Route path="home" element={<HomeTwo />} />
         {/* <Route path="home-3" element={<HomeThree />} /> */}
         {/* <Route path="about" element={<About />} /> */}
         {/* <Route path="one-page-style-one" element={<OnePageHome />} />

@@ -592,7 +592,7 @@ export default function Home() {
                       Follow Us
                     </h3>
                     <div className="event-details__follow-us-social">
-                      <Link to="#">
+                      <Link to="">
                         <span className="icon-instagram"></span>
                       </Link>
                       <Link to="#">

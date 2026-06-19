@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.css';
-import videoBg from '../..//assets/images/resources/maxresdefault.jpg'
+import videoBg from '../..//assets/images/resources/maxresdefault.png'
 
 export default function VideoOne() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,9 @@ export default function VideoOne() {
             <section className="video-one" style={{ position: 'relative'}}>
                 <div className="container">
                     <div className="video-one__inner wow fadeInUp" data-wow-delay="300ms">
-                        <div className="video-one__img" style={{position:'relative'}}>
+                        <div className="video-one__img" style={{position:'relative' 
+                            
+                        }}>
                             
                             {/* overlay to hide unwanted number */}
                             <div style={{
@@ -23,7 +25,7 @@ export default function VideoOne() {
                                 zIndex:0
                             }}></div>
 
-                            <img src={videoBg} alt="Video Thumbnail" style={{position:'relative', zIndex:0 , zIndex:1, height:'500px'}} />
+                            <img src={videoBg} alt="Video Thumbnail" style={{position:'relative', zIndex:1, height:'500px' , objectFit:'cover'}} />
 
                             <div className="video-one__video-link" style={{zIndex:3}}>
                                 <div 
@@ -45,8 +47,9 @@ export default function VideoOne() {
                 <ModalVideo
                     channel="youtube"
                     isOpen={isOpen}
-                    videoId="SlNXXoJdxIE"
+                    videoId="RFe1gk9zs64"
                     onClose={() => setIsOpen(false)}
+
                    
                 />
             </section>

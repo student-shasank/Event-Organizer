@@ -1,8 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component from React Router
+import Event from "../../assets/images/backgrounds/event.svg"
 export const servicesData = [
   {
     id: 1,
+    title: <>Corporate Events</>,
+    link: "/",
+    icon: "icon-location",
+    delay: "300ms",
+    points: [
+      "Business Conferences & Seminars",
+      "Annual General Meetings (AGM)",
+      "Corporate Meetings & Executive Summits"
+    ]
+  },
+  {
+    id: 2,
+    title: <>Employee Engagement <br /> Events</>,
+    link: "/",
+    icon: Event,
+    delay: "200ms",
+    points: [
+      "Corporate Parties & Gala Nights",
+      "Team-Building Programs",
+      "Award & Recognition Ceremonies"
+    ]
+  },
+  {
+    id: 3,
     title: <>Brand & Marketing <br /> Events</>,
     link: "/",
     icon: "icon-theater",
@@ -10,33 +35,9 @@ export const servicesData = [
     points: [
       "Product Launches",
       "Brand Activations",
-      "Roadshows & Promos"
+      "Roadshows & Promotional Events"
     ]
   },
-  {
-    id: 2,
-    title: <>Employee Engagement <br /> Events</>,
-    link: "/",
-    icon: "icon-magic-show",
-    delay: "200ms",
-    points: [
-      "Corporate Gala Nights",
-      "Team-Building Programs",
-      "Award Ceremonies"
-    ]
-  },
-  {
-    id: 3,
-    title: <>Corporate Events & <br /> Summits</>,
-    link: "/",
-    icon: "icon-location",
-    delay: "300ms",
-    points: [
-      "Conferences & Seminars",
-      "Annual General Meetings",
-      "Executive Summits"
-    ]
-  }
 ];
    // Adjust the path according to your project structure
 
@@ -62,8 +63,11 @@ export default function ServicesTwo() {
             >
               <div className="services-two__single">
                 <div className="services-two__icon">
-                  <span className={service.icon}></span>
-                </div>
+  {service.icon.toString().startsWith('icon-') 
+    ? <span className={service.icon}></span>
+    : <img src={service.icon} alt="icon" width={45} height={45} style={{filter: 'brightness(0) invert(1)'}} />
+  }
+</div>
                 <h3 className="services-two__title">
                   <Link to={service.link}>
                     {service.title}

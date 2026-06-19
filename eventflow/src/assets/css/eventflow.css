@@ -38,7 +38,7 @@
   --eventflow-font-two: "Inter", sans-serif;
   --eventflow-gray: #7C7B7B;
   --eventflow-gray-rgb: 124, 123, 123;
-  --eventflow-white: #ffffff;
+  --eventflow-white: #fff;
   --eventflow-white-rgb: 255, 255, 255;
   --eventflow-base: #B20D5D;
   --eventflow-base-rgb: 178, 13, 93;
@@ -269,13 +269,14 @@ ul {
   -webkit-appearance: none;
   appearance: none;
   outline: none !important;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 17px;
   color: var(--eventflow-white);
   text-transform: capitalize;
   letter-spacing: 1.6px;
   padding: 17px 30px 17px;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+   background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%); 
+  /* background: linear-gradient(90deg, #00d4ff 0%, #ff00ff 100%); */
   border-radius: 30px;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -383,6 +384,12 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+.schedule-two__img img {
+    width: 100%;
+    height: 250px; /* apni requirement ke hisaab se change kar sakte ho */
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .preloader__image {
@@ -836,7 +843,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--eventflow-white);
+
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -844,6 +851,7 @@ ul {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+
 
 .main-menu .main-menu__list>li.dropdown>a {
   padding-right: 16px;
@@ -1389,7 +1397,7 @@ ul {
 # Navigations Two
 --------------------------------------------------------------*/
 .main-header-two {
-  background-color: var(--eventflow-black);
+  background-color: #04000a00;
 }
 
 .main-menu-two .main-menu__wrapper-inner {
@@ -1993,13 +2001,15 @@ ul {
 .main-slider-two {
   position: relative;
   display: block;
-  background-color: var(--eventflow-black);
+   /* background-color: var(--eventflow-black);  */
   z-index: 91;
+  margin-top: -151px; 
+  padding-top: 151px;
 }
 
 .main-slider-two .swiper-slide {
   position: relative;
-  background-color: var(--eventflow-black);
+   /* background-color: var(--eventflow-black);  */
 }
 
 .main-slider-two .container {
@@ -2024,7 +2034,8 @@ ul {
   line-height: 18px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: var(--eventflow-white);
+  /* color: var(--eventflow-white); */
+  color:#000000;
   opacity: 1;
   -webkit-transition: all 1500ms ease;
   -moz-transition: all 1500ms ease;
@@ -2046,7 +2057,7 @@ ul {
 
 .main-slider-two__title {
   position: relative;
-  color: var(--eventflow-white);
+  color: #000000;
   font-size: 68px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2062,7 +2073,8 @@ ul {
 }
 
 .main-slider-two__title .color-text {
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  /* background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%); */
+  background:  linear-gradient(90deg, #6926dd , #c71169 ) border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2160,7 +2172,7 @@ ul {
   bottom: 0px;
   border-radius: 250px;
   border: 6px solid transparent;
-  background: linear-gradient(180deg, #b20d5c, #490ab3) border-box;
+  background: linear-gradient(90deg, #b00d5c, #490ab3) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -5363,8 +5375,8 @@ ul {
 .testimonial-one {
   position: relative;
   display: block;
-  background-color: var(--eventflow-black);
-  padding: 120px 0 340px;
+  background-color: white;
+  padding: 120px 0 230px;
   z-index: 1;
 }
 
@@ -6375,7 +6387,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90.1deg, #F24617 -3.39%, rgba(242, 70, 23, 0.17) -3.38%, rgba(140, 40, 13, 0.1) 99.91%);
+ 
   border-radius: 10px;
   font-size: 60px;
   color: var(--eventflow-white);
@@ -11565,7 +11577,7 @@ ul {
   }
 
   .site-footer-two__top-content {
-      font-size: 18px;
+      font-size: 36px;
       line-height: 20px;
       padding: 15px 15px 15px;
   }
@@ -12434,4 +12446,56 @@ ul {
 
 
 
+}
+
+.contact-one__input-box select.selectmenu.wide {
+    height: 54px;
+    width: 100%;
+    background-color: #0b0814 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(var(--eventflow-bdr-color-rgb), .20);
+    border-radius: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+}
+
+.contact-one__input-box select.selectmenu.wide option {
+    background-color: #0b0814 !important;
+    color: #ffffff !important;
+}
+.contact-one__input-box .nice-select {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-radius: 27px;
+}
+
+.contact-one__input-box .nice-select .list {
+    background-color: #0b0814 !important;
+    color: #ffffff !important;
+}
+
+.contact-one__input-box .nice-select .option:hover,
+.contact-one__input-box .nice-select .option.focus,
+.contact-one__input-box .nice-select .option.selected.focus {
+    background-color: #c0006f !important;
+    color: #ffffff !important;
+}
+
+.main-slider-two__btn {
+  color: #000;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.main-slider-two__btn:hover {
+  color: #fff !important;
+}
+
+.main-slider-two__btn:hover span {
+  color: #fff !important;
 }
