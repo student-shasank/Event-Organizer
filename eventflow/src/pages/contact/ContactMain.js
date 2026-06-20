@@ -1,25 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
+
 
 const ContactMain = () => {
-  const services = [
-    'Business Conferences & Seminars',
-    'Annual General Meetings (AGM)',
-    'Corporate Meetings & Executive Summits',
-    'Team-Building Programs',
-    'Leadership & Development Workshops',
-    'Brand & Marketing Training Events',
-    'Corporate Gala Nights & Parties',
-    'Award & Recognition Ceremonies',
-    'Product Launches & Brand Activations',
-  ];
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    serviceType: '',
     message: '',
   });
 
@@ -31,49 +18,51 @@ const ContactMain = () => {
       [e.target.name]: e.target.value,
     });
   };
+ 
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  setLoading(true);
 
-    setLoading(true);
+  try {
+    const response = await fetch('/send-mail.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      }),
+    });
 
-    emailjs
-      .send(
-        'service_u8hsfdr',
-        'template_jhsv59e',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          service_type: formData.serviceType,
-          message: formData.message,
-          to_email: 'andre@gtnomads.com',
-        },
-        'kNqOxZ2-qe3IsXNnW'
-      )
-      .then(() => {
-        alert('Thank you! Your inquiry has been submitted successfully.');
+    const result = await response.json();
 
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          serviceType: '',
-          message: '',
-        });
-      })
-      .catch((error) => {
-        console.error(error);
-        alert('Something went wrong. Please try again.');
-      })
-      .finally(() => {
-        setLoading(false);
+    if (result.success) {
+      alert('Thank you! Your inquiry has been submitted successfully.');
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
       });
-  };
+    } else {
+      alert(result.error || 'Failed to send email');
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Something went wrong. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <React.Fragment>
-      {/*Contact One Start*/}
+      {/* Contact One Start */}
       <section className="contact-one">
         <div className="container">
           <div className="contact-one__inner">
@@ -118,7 +107,7 @@ const ContactMain = () => {
                   </div>
                 </div>
 
-                <div className="col-xl-6 col-lg-6">
+                <div className="col-xl-12">
                   <div className="contact-one__input-box">
                     <input
                       type="text"
@@ -131,30 +120,6 @@ const ContactMain = () => {
                   </div>
                 </div>
 
-                <div className="col-xl-6 col-lg-6">
-                  <div className="contact-one__input-box">
-                    <div className="select-box">
-                      <select
-                        name="serviceType"
-                        className="selectmenu wide"
-                        value={formData.serviceType}
-                        onChange={handleChange}
-                        required
-                      >
-                        <option value="">
-                          Select Event Service
-                        </option>
-
-                        {services.map((service, index) => (
-                          <option key={index} value={service}>
-                            {service}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="col-xl-12">
                   <div className="contact-one__input-box text-message-box">
                     <textarea
@@ -162,6 +127,7 @@ const ContactMain = () => {
                       placeholder="Your Message"
                       value={formData.message}
                       onChange={handleChange}
+                      required
                     ></textarea>
                   </div>
 
@@ -183,9 +149,9 @@ const ContactMain = () => {
           </div>
         </div>
       </section>
-      {/*Contact One End*/}
+      {/* Contact One End */}
 
-      {/*Contact Two Start*/}
+      {/* Contact Two Start */}
       <section className="contact-two">
         <div className="container">
           <div className="row">
@@ -194,11 +160,13 @@ const ContactMain = () => {
                 <div className="contact-two__icon">
                   <span className="icon-pin"></span>
                 </div>
+
                 <h3 className="contact-two__title">Location</h3>
+
                 <p className="contact-two__text">
-                  2972 Westheimer Rd. Santa Ana,
+                  O-303, Roshina Enclave,
                   <br />
-                  Illinois 85486
+                  Margao, Goa
                 </p>
               </div>
             </div>
@@ -212,13 +180,13 @@ const ContactMain = () => {
                 <h3 className="contact-two__title">E-mail</h3>
 
                 <p className="contact-two__text">
-                  <Link to="mailto:tim.jennings@example.com">
+                  <Link to="mailto:sheldon@gtnomads.com">
                     sheldon@gtnomads.com
                   </Link>
                 </p>
 
                 <p className="contact-two__text">
-                  <a href="mailto:debra.holt@example.com">
+                  <a href="mailto:andre@gtnomads.com">
                     andre@gtnomads.com
                   </a>
                 </p>
@@ -234,13 +202,12 @@ const ContactMain = () => {
                 <h3 className="contact-two__title">Contact</h3>
 
                 <p className="contact-two__text">
-                  <a href="tel:919822959761">
-                    91 9822959761
+                  <a href="tel:+919822959761">
+                    +91 9822959761
                   </a>
-                  ,
-                  <a href="tel:919822980756">
-                    {' '}
-                    91 9822980756
+                  {' | '}
+                  <a href="tel:+919822980756">
+                    +91 9822980756
                   </a>
                 </p>
               </div>
@@ -248,7 +215,7 @@ const ContactMain = () => {
           </div>
         </div>
       </section>
-      {/*Contact Two End*/}
+      {/* Contact Two End */}
     </React.Fragment>
   );
 };

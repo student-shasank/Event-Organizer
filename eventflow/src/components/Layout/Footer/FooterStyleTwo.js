@@ -219,44 +219,43 @@ const FooterTwo = () => {
 
                                 {/* Newsletter */}
                                 <div
-                                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                                    data-wow-delay="400ms"
-                                >
-                                    <div className="footer-widget__column footer-widget-two__newsletter">
-                                        <div className="footer-widget__title-box">
-                                            <h3 className="footer-widget__title">
-                                                Newsletter
-                                            </h3>
-                                        </div>
+    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+    data-wow-delay="400ms"
+>
+    <div className="footer-widget__column footer-widget-two__newsletter">
+        <div className="footer-widget__title-box">
+            <h3 className="footer-widget__title">
+                Why GTNomads?
+            </h3>
+        </div>
 
-                                        <p className="footer-widget-two__newsletter-text">
-                                            Stay updated on destinations, events
-                                            <br />
-                                            and exclusive offers from GTNomads.
-                                        </p>
+        <p className="footer-widget-two__newsletter-text">
+            Delivering exceptional corporate events and
+            unforgettable experiences worldwide.
+        </p>
 
-                                        <form
-                                            className="footer-widget-two__newsletter-form mc-form"
-                                            data-url="MC_FORM_URL"
-                                            noValidate
-                                        >
-                                            <div className="footer-widget-two__newsletter-form-input-box">
-                                                <input
-                                                    type="email"
-                                                    placeholder="Email address.."
-                                                    name="EMAIL"
-                                                />
+        <ul
+            style={{
+                listStyle: "none",
+                padding: 0,
+                marginTop: "20px",
+            }}
+        >
+            <li style={{ marginBottom: "12px" }}>
+                ✓ 500+ Events Successfully Delivered
+            </li>
+            <li style={{ marginBottom: "12px" }}>
+                ✓ 50+ Global Destinations
+            </li>
+           
+            <li style={{ marginBottom: "12px" }}>
+                ✓ Dedicated Project Managers
+            </li>
+        </ul>
 
-                                                <button
-                                                    type="submit"
-                                                    className="footer-widget-two__newsletter-btn"
-                                                >
-                                                    <span className="icon-paper-plan"></span>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+       
+    </div>
+</div>
 
                             </div>
                         </div>

@@ -2970,9 +2970,9 @@ ul {
   color: var(--eventflow-white);
 }
 
-.team-one__name-hover a:hover {
+/* .team-one__name-hover a:hover {
   color: var(--eventflow-black);
-}
+} */
 
 .team-one__sub-title-hover {
   line-height: 16px;
